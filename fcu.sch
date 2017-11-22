@@ -928,17 +928,6 @@ F 3 "" H 13100 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13100 3950 13100 4000
-$Comp
-L SW_DIP_x01 SW?
-U 1 1 5A14BD3F
-P 13600 5250
-F 0 "SW?" H 13600 5400 50  0000 C CNN
-F 1 "SW_DIP_x01" H 13600 5100 50  0000 C CNN
-F 2 "" H 13600 5250 50  0001 C CNN
-F 3 "" H 13600 5250 50  0001 C CNN
-	1    13600 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13300 4700 13300 5700
 Connection ~ 13300 4700
@@ -966,9 +955,8 @@ F 3 "" H 13600 5700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13300 5700 13450 5700
-Connection ~ 13300 5250
 Wire Wire Line
-	13900 5250 14050 5250
+	13800 5250 14050 5250
 Wire Wire Line
 	14050 5250 14050 5900
 Wire Wire Line
@@ -1280,4 +1268,18 @@ Text Notes 12400 10950 0    118  ~ 0
 Wolverine Custom Bluetooth FCU
 Text Notes 1350 5700 0    59   ~ 0
 Solenoid Control Circuit
+$Comp
+L SW_Push SW?
+U 1 1 5A15DBA5
+P 13600 5250
+F 0 "SW?" H 13650 5350 50  0000 L CNN
+F 1 "SW_Push" H 13600 5190 50  0000 C CNN
+F 2 "" H 13600 5450 50  0001 C CNN
+F 3 "" H 13600 5450 50  0001 C CNN
+	1    13600 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 5250 13400 5250
+Connection ~ 13300 5250
 $EndSCHEMATC
